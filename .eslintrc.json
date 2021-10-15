@@ -1,0 +1,75 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "no-unused-vars":"off",
+        "no-shadow":"off",
+        "func-names":"off",
+        "no-param-reassign":"off",
+        "no-sequences":"off",
+        "guard-for-in":"off",
+        "no-underscore-dangle":"off",
+        "no-restricted-syntax":"off",
+        "no-return-assign":"off",
+        "no-unused-expressions":"off",
+        "no-bitwise":"off",
+        "no-cond-assign":"off",
+        "no-use-before-define":"off",
+        "no-nested-ternary":"off",
+        "max-len":"off",
+        "no-multi-assign":"off",
+        "no-void":"off",
+        "react/destructuring-assignment":"off",
+        "global-require":"off",
+        "no-continue":"off",
+        "block-scoped-var":"off",
+        "no-self-compare":"off",
+        "no-control-regex":"off",
+        "no-plusplus":"off",
+        "class-methods-use-this":"off",
+        "prefer-rest-params":"off",
+        "prefer-destructuring":"off",
+        "consistent-return":"off",
+        "default-case":"off",
+        "new-cap":"off",
+        "no-case-declarations":"off",
+        "no-mixed-operators":"off",
+        "no-console":"off",
+        "eqeqeq":"off",
+        "import/no-extraneous-dependencies":"off",
+        "no-new-wrappers":"off",
+        "no-undef":"off",
+        "no-unreachable":"off",
+        "no-fallthrough":"off",
+        "max-classes-per-file":"off",
+        "no-restricted-globals":"off",
+        "no-useless-escape":"off",
+        "prefer-spread":"off",
+        "no-var":"off",
+        "vars-on-top":"off",
+        "no-buffer-constructor":"off",
+        "no-empty":"off"
+    }
+}

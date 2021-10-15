@@ -1,4 +1,4 @@
-const faunadb = require("faunadb"); /* Import faunaDB sdk */
+const faunadb = require('faunadb'); /* Import faunaDB sdk */
 
 /* configure faunaDB Client with our secret */
 const q = faunadb.query;
@@ -6,17 +6,17 @@ const client = new faunadb.Client({
   secret: process.env.FAUNADB_SERVER_SECRET,
 });
 
-exports.handler = async function(event, context) {
+exports.handler = async function (event, context) {
   const data = JSON.parse(event.body);
-  console.log("Function `todo-create` invoked", data);
+  console.log('Function `todo-create` invoked', data);
   const todoItem = {
-    data: data,
+    data,
   };
   /* construct the fauna query */
   return client
-    .query(q.Create(q.Ref("classes/todos"), todoItem))
+    .query(q.Create(q.Ref('classes/todos'), todoItem))
     .then((response) => {
-      console.log("success", response);
+      console.log('success', response);
       /* Success! return the response with statusCode 200 */
       return {
         statusCode: 200,
@@ -24,7 +24,7 @@ exports.handler = async function(event, context) {
       };
     })
     .catch((error) => {
-      console.log("error", error);
+      console.log('error', error);
       /* Error! return the error with statusCode 400 */
       return {
         statusCode: 400,
