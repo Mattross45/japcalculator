@@ -25,6 +25,7 @@ jobs:
 
       # run tests!
       - run: yarn lint
+      - run: npx yarn-audit-fix
       - run: yarn test
       - run: yarn build
 
