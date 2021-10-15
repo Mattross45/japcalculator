@@ -1,14 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
-import * as serviceWorker from "./serviceWorker";
-import { Provider } from "react-redux";
-import { ConnectedRouter } from "connected-react-router";
-import ThemeProvider from "@material-ui/styles/ThemeProvider";
-import { store } from "./redux/config";
-import { history } from "./redux/Router/router";
-import { theme } from "./style/theme";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import { Provider } from 'react-redux';
+import { ConnectedRouter } from 'connected-react-router';
+import ThemeProvider from '@material-ui/styles/ThemeProvider';
+import * as serviceWorker from './serviceWorker';
+import App from './App';
+import { store } from './redux/config';
+import { history } from './redux/Router/router';
+import { theme } from './style/theme';
 
 ReactDOM.render(
   <Provider store={store}>
@@ -18,7 +18,7 @@ ReactDOM.render(
       </ThemeProvider>
     </ConnectedRouter>
   </Provider>,
-  document.getElementById("root")
+  document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change
